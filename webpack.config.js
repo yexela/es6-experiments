@@ -7,7 +7,7 @@ module.exports = {
     context: __dirname + '/frontend',
     entry: {
         counter: './redux/counter/counter',
-        todos: ['babel-polyfill', './redux/todos/index']
+        todos: ['./redux/todos/index']
     },
     output: {
         path: __dirname + '/public',

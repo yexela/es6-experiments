@@ -12,7 +12,9 @@
     "webpack": "^1.13.2",
     "babel-runtime": "^6.11.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-polyfill": "^6.16.0"
+  },
   "scripts": {
     "test": ""
   },

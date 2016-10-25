@@ -7,7 +7,8 @@ module.exports = {
     context: __dirname + '/frontend',
     entry: {
         counter: './redux/counter/counter',
-        todos: ['./redux/todos/index']
+        todos: ['./redux/todos/index'],
+        reactReduxTodos: './react-redux/todos/index'
     },
     output: {
         path: __dirname + '/public',
@@ -41,7 +42,10 @@ module.exports = {
     module: {
         loaders: [{
             test: /\.js$/,
-            loader: 'babel?presets[]=es2015'
+            loader: 'babel',
+            query: {
+                presets: ['es2015', 'react']
+            }
         }]
     }
 };
